@@ -58,15 +58,11 @@ const inventors = [
 // - Use the Array.prototype.filter() method to create a new array.
 // - The new array, 'veryOldInventors', should only include inventors born between the years 1500 and 1599.
 
-let veryOldInventors = []
+//let veryOldInventors = []
 
-const oldInventors = inventors.filter((inventor) => {
+const veryOldInventors = inventors.filter((inventor) => {
 
-    if (inventor.year > 1500 && inventor.year <= 1599){
-        veryOldInventors.push(inventor)
-    }
-
-    return veryOldInventors
+    return inventor.year > 1500 && inventor.year <= 1599
 
 }); 
 
